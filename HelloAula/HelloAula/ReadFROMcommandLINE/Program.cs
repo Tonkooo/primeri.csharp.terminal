@@ -16,7 +16,25 @@ namespace ReadFROMcommandLINE
 
 			//печат на резултат
 
-			Console.WriteLine("резултата А + Б = " + (a+b).ToString ()+ "\n\n\n");
+			Console.WriteLine("резултата А + Б = " + (a + b).ToString() + "\n");
+
+			string
+			test = "1";
+			test += ", 2";
+			test += ", 100";
+			test += ", 4";
+
+
+			test += ", 5";
+
+			Console.WriteLine("събиране с += :" + test + "\n");
+
+			test = test.Replace(",", ";");
+			Console.WriteLine("работа с Replace: " + test + "\n");
+
+			Console.WriteLine("трети знак:  " + test.Split(';')[2]);
+
+
 
 		}
 	}
